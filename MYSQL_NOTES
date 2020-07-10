@@ -1,0 +1,124 @@
+SQL ->Structured Query Language / Query Based Language
+Types of Commands in SQL:
+->DDL - Data Definition Language ->create, alter,drop
+->DML - Data Manipulation Language ->insert , update , delete
+
+DBMS->SQL->mysql,SQL server…
+Why we need DBMS?
+
+//Creating Database->
+create database studentTable;
+
+//using database
+Use studentTable;
+
+//How to create Table
+Create table <tableName>
+(
+Id int,
+Name char(20),
+Address varchar(500)
+);
+
+//we want to delete our entire table
+drop <tablename>;
+
+CHAR - fixed length ,loss of extra memory space
+VARCHAR - variable , there is no wastage of memory space
+
+//Inserting data into Table
+Insert into <tablename> values (101,”RAM”,”DWARKA”);
+Insert into <tablename> values (102,”Shyam”,”Uttam Nagar”);
+//how to view table(desc->describe)
+desc <tablename>; 
+
+#find/Select the name of student whose roll no is 101.
+Select name from studentTable where id=101;
+
+#find/Select all the details of student whose roll no is greater than 101.
+Select * from studentTable where id > 101
+parthg5082@gmail.com
+
+
+Commit-> it is used to permanently save the Transactions in the db
+RollBack->undo
+
+#display the record of the students whose name startswith ‘a’
+Select * from student where name like “a%”
+
+#display the record of the students whose name endswith ‘a’
+Select * from student where name like “%a”
+
+#display the record of the students whose name contains ‘a’
+Select * from student where name like “%a%”
+
+
+#display the record of the students whose name contains ‘a’ as third character
+Select * from student where name like “_ _a”
+
+#display the name students whose marks are greater than 80 and whose name starts with ‘a’
+Select name from students where marks > 80 and/or name like “a%”
+
+//UPDATE COMMAND->DML
+#replace the student name by “Shyam” whose name is “Ram”
+update <tableName> set name=“Shyam” where name=“ram” 
+
+//ALTER COMMAND - DDL
+Alter table <tablename>
+Drop column address;
+
+
+Alter table <tablename> 
+Add Address varchar(1000);
+
+
+Alter table <tablename>
+Modify column name varchar(20);
+
+#Delete command
+Delete from <tablename> where <condition>
+
+
+Length->
+Select LENGTH(“SAHIL”)
+->5
+Select UPPER(“sahil”)
+->SAHIL
+
+
+
+select LENGTH("SAHIL");
+select UCASE("sahil");
+select UPPER("sahil");
+select TRIM("        sahil     ")
+select LTRIM("         sahil          ");
+select RTRIM("         sahil          ");
+
+STRCMP
+Select STRCMP("MxSQL","MZSQL")
+
+If str1 == str2 , ans->0
+If str1 < str2,ans ->-1
+If str1 > str2 ,ans ->1
+
+
+String Substring 
+select SUBSTRING("RAM VERMA",1,3);
+select SUBSTRING("RAM VERMA",5,8);
+select REVERSE("RAM VERMA");
+
+REPLACING STRING
+select REPLACE("RAM VERMA","VERMA","SHARMA");
+
+Repeating a string
+SELECT REPEAT("Hello",5)
+
+select INSERT("ram kumar sharma",1,3,"shyam");
+String Addition
+select concat("ram","kumar","sharma");
+
+select INSTR("hey","he");
+
+select LEFT("hello",3);
+select RIGHT("hello",3);
+select mid("hello",3);
