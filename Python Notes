@@ -1,0 +1,35 @@
+Python->Computer Programming Language
+
+Features
+->general Purpose
+->High Level
+->Dynamically typed
+->Multi Paradigm Programming -> 
+			Object oriented Programming+Functional+Procedural
+->Interpreted Programming
+			-compiler->it executes the whole program at once
+										source code -> Machine code
+			interpreter->it executes the program line by line
+
+History ->
+Python was invented by Guido Van Rossum in 1989
+He named it Python because he was highly inspired show “Monty’s Python Flying Circus”.
+
+RULES FOR MAKING VARIABLES?
+-variable must not be started with numerics
+-there must be no space Inside it
+-There must be no special Character inside variable
+
+Data Types ->
+Number ->int, float(decimal),complex number
+String -> ‘xyz’,”xyz”,’’’xyz’’’
+Boolean-True/False
+
+Python Data Collection
+->List
+->Tuple
+->Dictionary
+->Sets
+
+Mutable ->list, dictionary ,sets
+Immutable ->number,String,Tuple,Frozen Sets
